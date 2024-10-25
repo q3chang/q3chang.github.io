@@ -1,5 +1,15 @@
 main:
 
+  - title: Cross-Modal Domain Generalization for Multi-view 3D Object Detection
+    authors: <strong>Gyusam Chang</strong> Wonjeong Ryoo, Sujin Jang, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sangpil Kim
+    conference_short: Pre-print
+    conference: Under Review
+    # pdf: https://arxiv.org/pdf/2306.00988.pdf
+    # code: https://github.com/MrGiovanni/ContinualLearning
+    # bibtex: https://bib.yliu.me/MICCAI23.txt
+    image: ./assets/img/CMDG.png
+    # notes: Early Accept
+
   - title: Unified Domain Generalization and Adaptation for Multi-view 3D Object Detection
     authors: <strong>Gyusam Chang*</strong>, Jiwon Lee*, Donghyun Kim, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sujin Jang, Sangpil Kim
     conference_short: NeurIPS 2024
@@ -22,7 +32,7 @@ main:
     image: ./assets/img/CMDA.png
 
   - title: "ORA3D: Overlap Region Aware Multi-view 3D Object Detection"
-    authors: Wonseok Roh, <strong>Gyusam Chang*</strong>, Seokha Moon, Giljoo Nam, Changyoung Kim, Younghyun Kim, Jinkyu Kim, Sangpil Kim
+    authors: Wonseok Roh, <strong>Gyusam Chang</strong>, Seokha Moon, Giljoo Nam, Changyoung Kim, Younghyun Kim, Jinkyu Kim, Sangpil Kim
     conference_short: BMVC 2022
     conference: The British Machine Vision Conference (BMVC)	, <strong>(BMVC)</strong>, 2022.
     # pdf: https://arxiv.org/pdf/2002.10211.pdf
