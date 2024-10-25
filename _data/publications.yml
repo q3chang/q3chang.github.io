@@ -31,6 +31,17 @@ main:
     # notes: Oral Presentation
     image: ./assets/img/CMDA.png
 
+  - title: "Self-supervised Multimodal Graph Convolutional Network for collaborative filtering"
+    authors: Sungjune Kim, Seongjun Yun, Jongwuk Lee, <strong>Gyusam Chang</strong>, Wonseok Roh, Dae-Neung Sohn, Jung-Tae Lee, Hogun Park, Sangpil Kim
+    conference_short: Information Sciences
+    conference: Information Sciences 653, 119760.
+    # pdf: https://arxiv.org/pdf/2002.10211.pdf
+    # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
+    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # notes: Oral Presentation
+    image: ./assets/img/SMGNN.png  
+
   - title: "ORA3D: Overlap Region Aware Multi-view 3D Object Detection"
     authors: Wonseok Roh, <strong>Gyusam Chang</strong>, Seokha Moon, Giljoo Nam, Changyoung Kim, Younghyun Kim, Jinkyu Kim, Sangpil Kim
     conference_short: BMVC 2022
