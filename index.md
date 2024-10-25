@@ -13,10 +13,10 @@ layout: homepage
 
 ## News
 
-- **[Sep. 2024]** Our paper 'UDGA' is accepted to **NeurIPS 2024**
-- **[Sep. 2024]** He embarked on his role as Visiting Graduate Researcher at **UCLA**
-- **[Sep. 2023]** Our paper 'CMDA' is accepted to **AAAI 2024**
-- **[Jun. 2023]** He embarked on his role as Research Internship at **SAIT**
+- **[Sep. 2024]** Our paper 'UDGA' is accepted to **NeurIPS 2024**!
+- **[Sep. 2024]** He embarked on his role as Visiting Graduate Researcher at **UCLA**!
+- **[Sep. 2023]** Our paper 'CMDA' is accepted to **AAAI 2024**!
+- **[Jun. 2023]** He embarked on his role as Research Internship at **SAIT**!
 
 
 {% include_relative _includes/publications.md %}
