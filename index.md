@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-**Gyusam Chang** is a Ph.D. student at **Korea University**, advised by Prof. Sangpil Kim. He previously interned at **Samsung Advanced Institute of Technology (SAIT)**, where he worked with Principal Researcher Sujin Jang, focusing on cutting-edge research in Domain Generalization and Adaptation for 3D Object Detection. Currently, he is a Visiting Graduate Researcher at **University of California, Los Angeles (UCLA)**, studying under Prof. M. Khalid Jawed, where he is pioneering research in 3D Reconstruction for smart farming systems. His research spans Autonomous Driving and Robotics, with a deep focus on learning transferable knowledge for 3D Recognition, and 3D Reconstruction.
+**Gyusam Chang** is a Ph.D. student at **Korea University**, advised by [Prof. Sangpil Kim](https://kuaicv.com/). He previously interned at **Samsung Advanced Institute of Technology (SAIT)**, where he worked with [Principal Researcher Sujin Jang](https://sujinjang.github.io/), focusing on cutting-edge research in Domain Generalization and Adaptation for 3D Object Detection. Currently, he is a Visiting Graduate Researcher at **University of California, Los Angeles (UCLA)**, studying under [Prof. M. Khalid Jawed](https://structures.computer/), where he is pioneering research in 3D Reconstruction for smart farming systems. His research spans Autonomous Driving and Robotics, with a deep focus on learning transferable knowledge for 3D Recognition, and 3D Reconstruction.
 
 ## Research Interests
 
