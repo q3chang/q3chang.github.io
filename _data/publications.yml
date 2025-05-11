@@ -1,6 +1,6 @@
 main:
 
-  - title: Reconstruction Using the Invisible: Intuition from NIR and Metadata for Enhanced 3D Gaussian Splatting
+  - title: "Reconstruction Using the Invisible: Intuition from NIR and Metadata for Enhanced 3D Gaussian Splatting"
     authors: <strong>Gyusam Chang</strong> Tuan-Anh Vu, Vivek Alumootil, Harris Song, Deanna Pham, Sangpil Kim, M. Khalid Jawed
     conference_short: CVPRW 2025
     conference: CVPR 2025 - 2nd Workshop on Neural Fields Beyond Conventional Cameras
