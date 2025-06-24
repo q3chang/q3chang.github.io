@@ -1,7 +1,16 @@
 main:
+  - title: "Reconstruction Using the Invisible: Intuition from NIR and Metadata for Enhanced 3D Gaussian Splatting"
+    authors: Hyeongcheol Park, MinHyuk Jang, Ha Dam Baek, <strong>Gyusam Chang</strong>, Jiyoung Seo, Jiwan Park, Hogun Park, Sangpil Kim
+    conference_short: Pre-print
+    conference: Under review
+    # pdf: https://arxiv.org/pdf/2306.00988.pdf
+    # code: https://github.com/MrGiovanni/ContinualLearning
+    # bibtex: https://bib.yliu.me/MICCAI23.txt
+    image: ./assets/img/vat-kg.png
+    # notes: Early Accept
 
   - title: "Reconstruction Using the Invisible: Intuition from NIR and Metadata for Enhanced 3D Gaussian Splatting"
-    authors: <strong>Gyusam Chang</strong> Tuan-Anh Vu, Vivek Alumootil, Harris Song, Deanna Pham, Sangpil Kim, M. Khalid Jawed
+    authors: <strong>Gyusam Chang</strong>, Tuan-Anh Vu, Vivek Alumootil, Harris Song, Deanna Pham, Sangpil Kim, M. Khalid Jawed
     conference_short: CVPRW 2025
     conference: CVPR 2025 - 2nd Workshop on Neural Fields Beyond Conventional Cameras
     # pdf: https://arxiv.org/pdf/2306.00988.pdf
@@ -11,7 +20,7 @@ main:
     # notes: Early Accept
 
   - title: Cross-Modal Domain Generalization for Multi-view 3D Object Detection
-    authors: <strong>Gyusam Chang</strong> Wonjeong Ryoo, Sujin Jang, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sangpil Kim
+    authors: <strong>Gyusam Chang</strong>, Wonjeong Ryoo, Sujin Jang, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sangpil Kim
     conference_short: Pre-print
     conference: Under Review
     # pdf: https://arxiv.org/pdf/2306.00988.pdf

@@ -9,6 +9,7 @@ layout: homepage
 ## Research Interests
 
 - **Computer Vision:** 3D Object Detectoin, 3D Reconstruction
+- **Multimodal AI**: LLM, VLM, RAG, MMKG
 - **Machine Learning:** Domain Generalization and Adaptation
 
 ## News
