@@ -26,7 +26,7 @@ main:
     # pdf: https://arxiv.org/pdf/2306.00988.pdf
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: assets/img/NTRSplat.png
+    image: ./assets/img/CMDG.png
     # notes: Early Accept
 
 
