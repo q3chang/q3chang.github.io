@@ -1,5 +1,5 @@
 main:
-  - title: "Reconstruction Using the Invisible: Intuition from NIR and Metadata for Enhanced 3D Gaussian Splatting"
+  - title: "VAT-KG: Knowledge-Intensive Multimodal Knowledge Graph Dataset for Retrieval-Augmented Generation"
     authors: Hyeongcheol Park, MinHyuk Jang, Ha Dam Baek, <strong>Gyusam Chang</strong>, Jiyoung Seo, Jiwan Park, Hogun Park, Sangpil Kim
     conference_short: Pre-print
     conference: Under review
@@ -9,7 +9,7 @@ main:
     image: ./assets/img/vat-kg.png
     # notes: Early Accept
 
-  - title: Cross-Modal Domain Generalization for Multi-view 3D Object Detection
+  - title: "Cross-Modal Domain Generalization for Multi-view 3D Object Detection"
     authors: <strong>Gyusam Chang</strong>, Wonjeong Ryoo, Sujin Jang, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sangpil Kim
     conference_short: Pre-print
     conference: Under Review
@@ -30,7 +30,7 @@ main:
     # notes: Early Accept
 
 
-  - title: Unified Domain Generalization and Adaptation for Multi-view 3D Object Detection
+  - title: "Unified Domain Generalization and Adaptation for Multi-view 3D Object Detection"
     authors: <strong>Gyusam Chang*</strong>, Jiwon Lee*, Donghyun Kim, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sujin Jang, Sangpil Kim
     conference_short: NeurIPS 2024
     conference: The Thirty-eighth Annual Conference on Neural Information Processing Systems, <strong>(NeurIPS)</strong>, 2024.
