@@ -8,9 +8,6 @@
   <a ><autocolor><i>US Patent App. 18/897,759, 2025</i></autocolor></a>
 </ul>
 
-<br>
-
-
 <ul style="padding: 0; margin: 0 10px 0;">
   <a ><autocolor>Sujin Jang, Sangpil Kim, Jinkyu Kim, Wonseok Roh, <strong>Gyusam Chang</strong>, Dongwook Lee, Daehyun Ji</autocolor></a><br>
 
