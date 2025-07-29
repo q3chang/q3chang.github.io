@@ -9,3 +9,11 @@
 </ul>
 
 <br>
+
+<ul style="padding: 0; margin: 0 10px 0;">
+  <a ><autocolor>Sujin Jang, Sangpil Kim, Jinkyu Kim, Wonjeong Ryu, Dongwook Lee, <strong>Gyusam Chang</strong>, Daehyun Ji</autocolor></a><br>
+
+  <a ><autocolor><i>US Patent App. 18/451,287, 2024</i></autocolor></a>
+</ul>
+
+<br>

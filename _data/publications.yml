@@ -34,7 +34,7 @@ main:
     authors: <strong>Gyusam Chang*</strong>, Jiwon Lee*, Donghyun Kim, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sujin Jang, Sangpil Kim
     conference_short: NeurIPS 2024
     conference: The Thirty-eighth Annual Conference on Neural Information Processing Systems, <strong>(NeurIPS)</strong>, 2024.
-    # pdf: https://arxiv.org/pdf/2306.00988.pdf
+    pdf: https://proceedings.neurips.cc/paper_files/paper/2024/hash/6b7e1e96243c9edc378f85e7d232e415-Abstract-Conference.html
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/UDGA.png
@@ -44,7 +44,7 @@ main:
     authors: <strong>Gyusam Chang*</strong>, Wonseok Roh*, Sujin Jang, Dongwook Lee, Daehyun Ji, Gyeongrok Oh, Jinsun Park, Jinkyu Kim, Sangpil Kim
     conference_short: AAAI 2024
     conference: The 38th Annual AAAI Conference on Artificial Intelligence, <strong>(AAAI)</strong>, 2024.
-    # pdf: https://arxiv.org/pdf/2002.10211.pdf
+    pdf: https://ojs.aaai.org/index.php/AAAI/article/view/27857
     # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
@@ -55,7 +55,7 @@ main:
     authors: Sungjune Kim, Seongjun Yun, Jongwuk Lee, <strong>Gyusam Chang</strong>, Wonseok Roh, Dae-Neung Sohn, Jung-Tae Lee, Hogun Park, Sangpil Kim
     conference_short: Information Sciences
     conference: Information Sciences 653, 119760.
-    # pdf: https://arxiv.org/pdf/2002.10211.pdf
+    pdf: https://www.sciencedirect.com/science/article/pii/S0020025523013452
     # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
@@ -66,7 +66,7 @@ main:
     authors: Wonseok Roh, <strong>Gyusam Chang</strong>, Seokha Moon, Giljoo Nam, Changyoung Kim, Younghyun Kim, Jinkyu Kim, Sangpil Kim
     conference_short: BMVC 2022
     conference: The British Machine Vision Conference (BMVC)	, <strong>(BMVC)</strong>, 2022.
-    # pdf: https://arxiv.org/pdf/2002.10211.pdf
+    pdf: https://arxiv.org/abs/2207.00865
     # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
