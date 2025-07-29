@@ -8,7 +8,6 @@
   <a ><autocolor><i>US Patent App. 18/897,759, 2025</i></autocolor></a>
 </ul>
 
-<br>
 
 <h4 href="Method and apparatus with object detection model training" style="margin:0 10px 0;">Method and apparatus with object detector training</h4>
 
