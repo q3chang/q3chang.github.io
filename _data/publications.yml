@@ -65,7 +65,7 @@ main:
   - title: "ORA3D: Overlap Region Aware Multi-view 3D Object Detection"
     authors: Wonseok Roh, <strong>Gyusam Chang</strong>, Seokha Moon, Giljoo Nam, Changyoung Kim, Younghyun Kim, Jinkyu Kim, Sangpil Kim
     conference_short: BMVC 2022
-    conference: The British Machine Vision Conference <strong>(BMVC)</strong>, 2022.
+    conference: The British Machine Vision Conference, <strong>(BMVC)</strong>, 2022.
     pdf: https://arxiv.org/abs/2207.00865
     # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
