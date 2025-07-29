@@ -26,7 +26,7 @@ main:
     pdf: https://drive.google.com/file/d/1Qt0EgbDEEPwOe0FkUrS-trYPWGARcXdW/view
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/NTRSplat.png
+    image: ./assets/img/ntrsplat.png
     # notes: Early Accept
 
 
