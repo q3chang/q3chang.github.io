@@ -1,21 +1,27 @@
 ## Patents
 
-<h4 href="https://patents.google.com/patent/US20250157195A1/en" style="margin:0 10px 0;">Method and apparatus with object detection model training</h4>
+<!-- 특허 1 -->
+<div style="display: flex; align-items: flex-start; margin: 20px 0;">
+  <img src="./assets/img/cmdg_patent.png" alt="patent image" style="width: 180px; border-radius: 8px; margin-right: 20px; box-shadow: 0 0 8px rgba(0,0,0,0.2);" />
+  
+  <div>
+    <h4 style="margin: 0;">Method and apparatus with object detection model training</h4>
+    <p style="margin: 4px 0 0;">
+      <autocolor>Sujin Jang, Sangpil Kim, Jinkyu Kim, Wonjeong Ryu, Dongwook Lee, <strong>Gyusam Chang</strong>, Daehyun Ji</autocolor><br>
+      <autocolor><i>US Patent App. 18/897,759, 2025</i></autocolor>
+    </p>
+  </div>
+</div>
 
-<ul style="padding: 0; margin: 0 10px 0;">
-  <a ><autocolor>Sujin Jang, Sangpil Kim, Jinkyu Kim, Wonjeong Ryu, Dongwook Lee, <strong>Gyusam Chang</strong>, Daehyun Ji</autocolor></a><br>
-
-  <a ><autocolor><i>US Patent App. 18/897,759, 2025</i></autocolor></a>
-</ul>
-
-
-<h4 href="Method and apparatus with object detection model training" style="margin:0 10px 0;">Method and apparatus with object detector training</h4>
-
-<ul style="padding: 0; margin: 0 10px 0;">
-  <a ><autocolor>Sujin Jang, Sangpil Kim, Jinkyu Kim, Wonseok Roh, <strong>Gyusam Chang</strong>, Dongwook Lee, Daehyun Ji</autocolor></a><br>
-
-  <a ><autocolor><i>US Patent App. 18/451,287, 2024</i></autocolor></a>
-</ul>
-
-<br>
-
+<!-- 특허 2 -->
+<div style="display: flex; align-items: flex-start; margin: 20px 0;">
+  <img src="./assets/img/cmda_patent.png" alt="patent image" style="width: 180px; border-radius: 8px; margin-right: 20px; box-shadow: 0 0 8px rgba(0,0,0,0.2);" />
+  
+  <div>
+    <h4 style="margin: 0;">Method and apparatus with object detector training</h4>
+    <p style="margin: 4px 0 0;">
+      <autocolor>Sujin Jang, Sangpil Kim, Jinkyu Kim, Wonseok Roh, <strong>Gyusam Chang</strong>, Dongwook Lee, Daehyun Ji</autocolor><br>
+      <autocolor><i>US Patent App. 18/451,287, 2024</i></autocolor>
+    </p>
+  </div>
+</div>
