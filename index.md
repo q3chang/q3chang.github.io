@@ -25,5 +25,4 @@ layout: homepage
 
 {% include_relative _includes/patents.md %}
 
-
 {% include_relative _includes/services.md %}
