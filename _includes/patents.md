@@ -19,6 +19,7 @@
        alt="patent image" 
        class="teaser img-fluid z-depth-1"
        style="width: 180px; height: 123px; border-radius: 8px; box-shadow: 3px 3px 6px #888; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover;">
+  </div>
   <div>
     <h4 class="col-sm-9" style="margin: 0; position: relative;padding-right: 15px;padding-left: 20px; font-weight: bolder;">Method and apparatus with object detector training</h4>
     <p style="padding-right: 15px;padding-left: 20px;">
