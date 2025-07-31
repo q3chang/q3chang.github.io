@@ -3,7 +3,7 @@ main:
     authors: Hyeongcheol Park, MinHyuk Jang, Ha Dam Baek, <strong>Gyusam Chang</strong>, Jiyoung Seo, Jiwan Park, Hogun Park, Sangpil Kim
     conference_short: Pre-print
     conference: Under review
-    # pdf: https://arxiv.org/pdf/2306.00988.pdf
+    pdf: https://arxiv.org/pdf/2506.21556
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/vat-kg.png
