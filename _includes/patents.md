@@ -2,7 +2,16 @@
 
 <!-- 특허 1 -->
 <div style="display: flex; align-items: flex-start; margin: 20px 0;">
-  <img src="./assets/img/cmdg_patent.png" alt="patent image" style="width: 180px; border-radius: 8px; margin-right: 20px; box-shadow: 0 0 8px rgba(0,0,0,0.2);" />
+  <img src="./assets/img/cmdg_patent.png" 
+       alt="patent image" 
+       style="
+         width: 180px;
+         border-radius: 12px;
+         margin-right: 20px;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+         transition: box-shadow 0.3s ease-in-out;
+       " />
+</div>
   
   <div>
     <h4 style="margin: 0;">Method and apparatus with object detection model training</h4>
@@ -15,7 +24,16 @@
 
 <!-- 특허 2 -->
 <div style="display: flex; align-items: flex-start; margin: 20px 0;">
-  <img src="./assets/img/cmda_patent.png" alt="patent image" style="width: 180px; border-radius: 8px; margin-right: 20px; box-shadow: 0 0 8px rgba(0,0,0,0.2);" />
+  <img src="./assets/img/cmda_patent.png" 
+       alt="patent image" 
+       style="
+         width: 180px;
+         border-radius: 12px;
+         margin-right: 20px;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+         transition: box-shadow 0.3s ease-in-out;
+       " />
+</div>
   
   <div>
     <h4 style="margin: 0;">Method and apparatus with object detector training</h4>
