@@ -23,7 +23,7 @@ main:
     authors: <strong>Gyusam Chang</strong>, Tuan-Anh Vu, Vivek Alumootil, Harris Song, Deanna Pham, Sangpil Kim, M. Khalid Jawed
     conference_short: CVPRW 2025
     conference: CVPR 2025 - 2nd Workshop on Neural Fields Beyond Conventional Cameras
-    pdf: https://drive.google.com/file/d/1Qt0EgbDEEPwOe0FkUrS-trYPWGARcXdW/view
+    pdf: https://arxiv.org/abs/2508.14443
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/ntrsplat.png
