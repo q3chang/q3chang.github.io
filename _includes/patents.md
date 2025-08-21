@@ -1,6 +1,6 @@
 ## Patents
 <!-- 특허 1 -->
-<div style="display: flex; align-items: flex-start; margin: 20px 0; padding: 16px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+<div style="display: flex; align-items: flex-start; margin: 20px 0; padding: 16px; border-radius: 10px;">
   <img src="./assets/img/cmdg_patent.png" 
        alt="patent image" 
        class="teaser img-fluid z-depth-1"
@@ -15,7 +15,7 @@
 </div>
 
 <!-- 특허 2 -->
-<div style="display: flex; align-items: flex-start; margin: 20px 0; padding: 16px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+<div style="display: flex; align-items: flex-start; margin: 20px 0; padding: 16px; border-radius: 10px;">
   <img src="./assets/img/cmda_patent.png" 
        alt="patent image" 
        class="teaser img-fluid z-depth-1"
