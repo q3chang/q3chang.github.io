@@ -1,4 +1,14 @@
 main:
+  - title: "RevoNAD: Reflective Evolutionary Exploration for Neural Architecture Design"
+    authors: Gyusam Chang, Jeongyoon Yoon, Shin han yi, JaeHyeok Lee, Sujin Jang, Sangpil Kim
+    conference_short: Pre-print
+    conference: Under review
+    # pdf: https://arxiv.org/pdf/2506.21556
+    # code: https://github.com/MrGiovanni/ContinualLearning
+    # bibtex: https://bib.yliu.me/MICCAI23.txt
+    image: ./assets/img/RevoNAD.png
+    # notes: Early Accept
+
   - title: "VAT-KG: Knowledge-Intensive Multimodal Knowledge Graph Dataset for Retrieval-Augmented Generation"
     authors: Hyeongcheol Park, MinHyuk Jang, Ha Dam Baek, <strong>Gyusam Chang</strong>, Jiyoung Seo, Jiwan Park, Hogun Park, Sangpil Kim
     conference_short: Pre-print
@@ -21,8 +31,8 @@ main:
 
   - title: "Reconstruction Using the Invisible: Intuition from NIR and Metadata for Enhanced 3D Gaussian Splatting"
     authors: <strong>Gyusam Chang</strong>, Tuan-Anh Vu, Vivek Alumootil, Harris Song, Deanna Pham, Sangpil Kim, M. Khalid Jawed
-    conference_short: CVPRW 2025
-    conference: CVPR 2025 - 2nd Workshop on Neural Fields Beyond Conventional Cameras
+    conference_short: AAAI 2026, CVPRW 2025
+    conference: The 40th Annual AAAI Conference on Artificial Intelligence
     pdf: https://arxiv.org/abs/2508.14443
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt

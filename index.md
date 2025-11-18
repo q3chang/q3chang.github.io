@@ -14,6 +14,7 @@ layout: homepage
 
 ## News
 
+- **[May. 2025]** Our paper 'NIRSplat' is accepted to **AAAI 2026**!
 - **[May. 2025]** Our paper 'NIRSplat' is accepted to **CVPRW 2025**!
 - **[Sep. 2024]** Our paper 'UDGA' is accepted to **NeurIPS 2024**!
 - **[Sep. 2024]** He embarked on his role as Visiting Graduate Researcher at **UCLA**!
