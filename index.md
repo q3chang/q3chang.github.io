@@ -8,9 +8,9 @@ layout: homepage
 
 ## Research Interests
 
-- **Computer Vision:** 3D Object Detectoin, 3D Reconstruction
-- **Multimodal AI**: LLM, VLM, RAG, MMKG
-- **Machine Learning:** Domain Generalization and Adaptation
+- Computer Vision: 3D Object Detection, Multi-view 3D Reconstruction, 3D Gaussian Splatting
+- Multimodal AI: Large Language Models (LLMs), Vision-Language Models (VLMs), Retrieval-Augmented Generation (RAG), Multimodal Knowledge Graphs (MMKGs), Recommender Systems
+- Machine Learning: Domain Generalization and Domain Adaptation, Neural Architecture Design (NAD)
 
 ## News
 
