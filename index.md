@@ -19,9 +19,9 @@ layout: homepage
 
 - **[Nov. 2025]** Our paper 'NIRSplat' has been accepted to **AAAI 2026**!
 - **[Sep. 2024]** Our paper 'UDGA' was accepted to **NeurIPS 2024**!
-- **[Sep. 2024]** He joined SCI Lab at ![](https://img.shields.io/badge/UCLA-skyblue) as a Visiting Graduate Researcher!
+- **[Sep. 2024]** He joined SCI Lab at <span style="color:#87CEEB; font-family: inherit;">***UCLA***</span> as a Visiting Graduate Researcher!
 - **[Sep. 2023]** Our paper 'CMDA' was accepted to **AAAI 2024**!
-- **[Jun. 2023]** He joined CV Lab at ![](https://img.shields.io/badge/SAIT-blue) as a Research Intern!
+- **[Jun. 2023]** He joined CV Lab at <span style="color:#005BBB;">**SAIT**</span> as a Research Internship!
 
 
 {% include_relative _includes/publications.md %}
