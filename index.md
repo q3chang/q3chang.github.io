@@ -17,12 +17,11 @@ layout: homepage
 
 ## News
 
-- **[Nov. 2025]** Our paper 'NIRSplat' is accepted to **AAAI 2026**!
-- **[May. 2025]** Our paper 'NIRSplat' is accepted to **CVPRW 2025**!
-- **[Sep. 2024]** Our paper 'UDGA' is accepted to **NeurIPS 2024**!
-- **[Sep. 2024]** He embarked on his role as Visiting Graduate Researcher at **UCLA**!
-- **[Sep. 2023]** Our paper 'CMDA' is accepted to **AAAI 2024**!
-- **[Jun. 2023]** He embarked on his role as Research Internship at **SAIT**!
+- **[Nov. 2025]** Our paper 'NIRSplat' has been accepted to **AAAI 2026**!
+- **[Sep. 2024]** Our paper 'UDGA' was accepted to **NeurIPS 2024**!
+- **[Sep. 2024]** He joined SCI Lab at <span style="color:#87CEEB;">***UCLA***</span> as a Visiting Graduate Researcher!
+- **[Sep. 2023]** Our paper 'CMDA' was accepted to **AAAI 2024**!
+- **[Jun. 2023]** He joined CV Lab at <span style="color:#005BBB;">**SAIT**</span> as a Research Internship!
 
 
 {% include_relative _includes/publications.md %}
