@@ -42,7 +42,12 @@ export default function AboutSection() {
           className="mb-16 text-lg text-gray-300 leading-relaxed text-left" // 여기가 왼쪽 정렬입니다!
         >
           <p>
-            Gyusam Chang is a Ph.D. candidate at Korea University. He previously interned at Samsung Advanced Institute of Technology (SAIT), where he worked with Principal Researcher Sujin Jang on domain generalization and adaptation for 3D object detection. He also completed a Visiting Graduate Researcher program at the University of California, Los Angeles (UCLA), working with Prof. M. Khalid Jawed on 3D reconstruction for smart farming systems. His current research focuses on Agentic AI for Neural Architecture Design, developing Multi-agent frameworks for interpretable architecture design across diverse real-world applications.
+            Gyusam Chang is a Ph.D. candidate at Korea University. 
+            He previously interned at <span className="text-blue-400 font-bold">Samsung Advanced Institute of Technology (SAIT)</span>, 
+            where he worked with Principal Researcher Sujin Jang on domain generalization and adaptation for 3D object detection. 
+            He also completed a Visiting Graduate Researcher program at the <span className="text-yellow-400 font-bold">University of California, Los Angeles (UCLA)</span>, 
+            working with Prof. M. Khalid Jawed on 3D reconstruction for smart farming systems. 
+            His current research focuses on Agentic AI for Neural Architecture Design, developing Multi-agent frameworks for interpretable architecture design across diverse real-world applications.
           </p>
         </motion.div>
 
