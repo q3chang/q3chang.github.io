@@ -2,16 +2,17 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+// 🔥 [추가된 부분] 이미지를 쓰려면 이걸 가져와야 합니다!
+import Image from 'next/image';
 import { Linkedin, Mail, FileText, GraduationCap, Calendar, Tag, Clock, ArrowRight } from 'lucide-react';
 
-// 데이터 가져오기
 import publicationsData from '@/lib/publications.json';
 import newsData from '@/lib/news.json';
 import postsData from '@/lib/posts.json';
 import PublicationCard from '@/components/PublicationCard';
 
 export default function Home() {
-  // 링크 정보
+  // 행님! 아까 링크 주소들 잘 넣어두셨지예? 혹시 지워졌으면 다시 넣어주이소!
   const links = {
     linkedin: "https://www.linkedin.com/in/규삼행님아이디/",
     scholar: "https://scholar.google.com/citations?user=규삼행님아이디",
@@ -24,18 +25,13 @@ export default function Home() {
   return (
     <main className="bg-black text-white selection:bg-blue-500/30 relative">
       
-      {/* 🔥 [여기가 바뀐 핵심입니다 행님!] 🔥 
-          배경 오로라를 'fixed'로 박아서 스크롤해도 계속 떠 있게 만들었습니다! */}
+      {/* 배경 조명 (고정) */}
       <div className="fixed inset-0 z-0 pointer-events-none">
-        {/* 왼쪽 위 보라색 조명 */}
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] opacity-50" />
-        {/* 오른쪽 아래 파란색 조명 */}
         <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] opacity-50" />
       </div>
 
-      {/* =========================================
-          1. HOME 섹션
-      ========================================= */}
+      {/* 1. HOME 섹션 */}
       <section id="home" className="min-h-screen flex flex-col items-center justify-center p-6 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -66,9 +62,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* =========================================
-          2. ABOUT ME 섹션
-      ========================================= */}
+      {/* 2. ABOUT ME 섹션 (사진 추가됨!) */}
       <section id="about" className="min-h-screen flex items-center justify-center py-20 px-6 relative z-10">
         <div className="max-w-4xl w-full">
           <motion.div 
@@ -77,10 +71,25 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-5xl font-bold mb-8 text-center">About Me</h2>
+            <h2 className="text-5xl font-bold mb-12 text-center">About Me</h2>
             
+            {/* 🔥 [여기!] 행님 사진 들어갈 자리입니다 🔥 */}
+            <div className="flex justify-center mb-10">
+              <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white/10 shadow-[0_0_30px_rgba(59,130,246,0.3)] group">
+                {/* 행님! 여기서 src="/me.jpg" 부분이 파일 이름입니다.
+                   만약 파일 이름이 다르면 여기를 바꿔주셔야 합니다! (예: /profile.png)
+                */}
+                <Image 
+                  src="/me.JPG" 
+                  alt="Gyusam Chang" 
+                  fill 
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+            </div>
+
             {/* 자기소개 멘트 */}
-            <div className="mb-12 text-center max-w-2xl mx-auto">
+            <div className="mb-16 text-center max-w-2xl mx-auto">
               <p className="text-xl text-gray-300 leading-relaxed">
                 안녕하세요, <span className="text-blue-400 font-bold">고려대학교 박사과정 장규삼</span>입니다.<br/>
                 AI의 미래를 설계하는 Neural Architecture Search와 끊임없이 학습하는 Continual Learning을 연구하고 있습니다.
@@ -115,9 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* =========================================
-          3. NEWS 섹션
-      ========================================= */}
+      {/* 3. NEWS 섹션 (이하 동일) */}
       <section id="news" className="min-h-screen flex items-center justify-center py-20 px-6 relative z-10">
         <div className="max-w-3xl w-full">
           <motion.h2 
@@ -154,9 +161,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* =========================================
-          4. PUBLICATIONS 섹션
-      ========================================= */}
+      {/* 4. PUBLICATIONS 섹션 */}
       <section id="publications" className="min-h-screen flex flex-col items-center py-20 px-6 relative z-10">
         <div className="max-w-4xl w-full">
           <motion.h2 
@@ -183,9 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* =========================================
-          5. BLOG 섹션
-      ========================================= */}
+      {/* 5. BLOG 섹션 */}
       <section id="blog" className="min-h-screen flex flex-col items-center py-20 px-6 relative z-10">
         <div className="max-w-6xl w-full">
           <motion.h2 
