@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",  // 깃헙 페이지용 HTML 변환 옵션 (필수!)
+  output: 'export', // 이건 원래 있었을 겁니다
+  
+  // 🔥 [이걸 추가해야 합니다!] 이미지 최적화 끄기 (Github Pages 필수 설정)
   images: {
-    unoptimized: true, // 이미지 깨짐 방지 (필수!)
+    unoptimized: true,
   },
 };
 
