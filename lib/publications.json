@@ -1,23 +1,35 @@
 [
   {
-    "id": 1,
-    "title": "RevoNAD: Revolutionary Neural Architecture Design for Continual Learning",
-    "authors": "Gyusam Chang, Sangpil Kim",
-    "venue": "CVPR 2026 (Under Review)",
+    "id": "3",
+    "title": "RevoNAD: Reflective Evolutionary Exploration for Neural Architecture Design",
+    "authors": "Gyusam Chang, Jeongyoon Yoon, Shin han yi, JaeHyeok Lee, Sujin Jang, Sangpil Kim",
+    "venue": "Pre-print",
     "year": "2026",
-    "tags": ["Neural Architecture Search", "Continual Learning"],
+    "tags": ["Neural Architecture Search", "Neural Architecture Design"],
     "links": {
       "pdf": "#",
-      "code": "https://github.com/gyusam-chang"
+      "code": "#"
     }
   },
   {
-    "id": 2,
-    "title": "Efficient 3D Visual Navigation via Spatial Memory Networks",
-    "authors": "Gyusam Chang, Gil-dong Hong, Sangpil Kim",
-    "venue": "ICCV 2025",
+    "id": "2",
+    "title": "Reconstruction Using the Invisible: Intuition from NIR and Metadata for Enhanced 3D Gaussian Splatting",
+    "authors": "Gyusam Chang, Tuan-Anh Vu, Vivek Alumootil, Harris Song, Deanna Pham, Sangpil Kim, M. Khalid Jawed",
+    "venue": "AAAI 2026",
+    "year": "2026",
+    "tags": ["3D Reconstruction", "Gaussian Splatting", "Neural Radiance Fields"],
+    "links": {
+      "pdf": "https://arxiv.org/abs/2508.14443",
+      "code": "#"
+    }
+  },
+  {
+    "id": "1",
+    "title": "Unified Domain Generalization and Adaptation for Multi-view 3D Object Detection",
+    "authors": "Gyusam Chang*, Jiwon Lee*, Donghyun Kim, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sujin Jang, Sangpil Kim",
+    "venue": "NeurIPS 2024",
     "year": "2025",
-    "tags": ["3D Vision", "Robotics"],
+    "tags": ["Autonomous Driving", "3D Object Detection", "Domain Generalization", "Domain Adaptation"],
     "links": {
       "pdf": "#",
       "code": "#"

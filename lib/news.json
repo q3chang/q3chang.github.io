@@ -1,23 +1,37 @@
 [
   {
-    "id": 1,
-    "date": "2026-01-20",
+    "id": "5",
+    "date": "Nov. 2025",
     "category": "Publication",
-    "title": "Paper 'RevoNAD' accepted to CVPR 2026!",
-    "description": "Our work on Neural Architecture Search has been accepted for oral presentation."
+    "title": "AAAI 2026 Acceptance!",
+    "description": "Our paper 'NIRSplat' has been accepted to AAAI 2026!"
   },
   {
-    "id": 2,
-    "date": "2025-11-15",
-    "category": "Award",
-    "title": "Best Paper Award at ICCV 2025 Workshop",
-    "description": "Honored to receive the Best Paper Award for our research on 3D Visual Navigation."
+    "id": "4",
+    "date": "Sep. 2024",
+    "category": "Publication",
+    "title": "NeurIPS 2024 Acceptance!",
+    "description": "Our paper 'UDGA' was accepted to NeurIPS 2024!"
   },
   {
-    "id": 3,
-    "date": "2025-09-01",
+    "id": "3",
+    "date": "Sep. 2024",
     "category": "Career",
-    "title": "Started Visiting Researcher at NYU",
-    "description": "Joined the Data Science Center at NYU as a visiting graduate researcher."
+    "title": "Visiting Researcher at UCLA",
+    "description": "Joined SCI Lab at UCLA as a Visiting Graduate Researcher!"
+  },
+  {
+    "id": "2",
+    "date": "Sep. 2023",
+    "category": "Publication",
+    "title": "AAAI 2024 Acceptance!",
+    "description": "Our paper 'CMDA' was accepted to AAAI 2024!"
+  },
+  {
+    "id": "1",
+    "date": "Jun. 2023",
+    "category": "Career",
+    "title": "Research Internship at SAIT",
+    "description": "Joined CV Lab at Samsung Advanced Institute of Technology (SAIT) as a Research Intern!"
   }
 ]
