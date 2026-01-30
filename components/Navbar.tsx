@@ -56,7 +56,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center py-4 md:py-6 px-2">
       {/* 🔥 [핵심 수정] gap-0.5로 줄이고, 패딩도 모바일에 맞췄습니다! */}
-      <div className="flex items-center gap-0.5 md:gap-1 p-1.5 rounded-full bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl overflow-x-auto no-scrollbar max-w-full">
+      <div className="flex items-center gap-0.5 md:gap-1 p-1.5 rounded-full bg-black/90 md:bg-white/5 md:backdrop-blur-md border border-white/10 shadow-2xl overflow-x-auto no-scrollbar max-w-full">
         
         {/* 홈 버튼 */}
         <Link 

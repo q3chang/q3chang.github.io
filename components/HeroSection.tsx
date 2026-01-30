@@ -16,12 +16,15 @@ export default function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex flex-col items-center justify-center p-6 relative z-10">
       <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        // 🔥 모바일(window.innerWidth 체크 대신 CSS로 제어는 힘들어서 framer 기능을 씁니다)
+        // 사실 가장 좋은 건 모바일에서 duration을 0으로 때려버리는 겁니다.
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }} // 0.8초에서 0.3초로 줄여서 연산 시간을 단축!
         className="text-center max-w-3xl"
       >
-        <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl text-sm text-blue-300 font-mono">
+        {/* 🔥 backdrop-blur-lg 이거! 모바일 사파리에서 독약입니다. 아예 빼버리이소! */}
+        <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-white/10 border border-white/10 shadow-xl text-sm text-blue-300 font-mono">
           Ph.D. Student @ Korea Univ.
         </div>
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
