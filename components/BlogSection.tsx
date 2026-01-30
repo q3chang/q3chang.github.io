@@ -2,11 +2,10 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image'; // 🔥 이미지 도구 수입!
+import Image from 'next/image';
 import { Clock, ArrowRight } from 'lucide-react';
 import { useRef } from 'react';
 
-// 타입 정의에 image 추가
 interface BlogPost {
   id: string;
   title: string;
@@ -15,7 +14,7 @@ interface BlogPost {
   category: string;
   readTime: string;
   gradient: string;
-  image?: string; // 있을 수도 있음
+  image?: string;
 }
 
 export default function BlogSection({ posts }: { posts: BlogPost[] }) {
@@ -54,9 +53,10 @@ export default function BlogSection({ posts }: { posts: BlogPost[] }) {
               <Link href={`/blog/${post.id}`} className="group block h-full">
                 <div className="h-full rounded-2xl bg-white/5 border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col">
                   
-                  {/* 🔥 [핵심 수정] 사진이 있으면 사진, 없으면 그라데이션! */}
-                  <div className={`h-48 w-full relative overflow-hidden ${!post.image ? `bg-gradient-to-br ${post.gradient}` : ''}`}>
-                    {post.image && (
+                  {/* 🔥 [핵심 수정] md(PC) 이상에서만 사진 영역을 보여주고 렌더링합니다! */}
+                  {/* 모바일에서는 이 div 전체가 사라져서 텍스트 카드만 남습니다. */}
+                  {post.image && (
+                    <div className="hidden md:block h-48 w-full relative overflow-hidden">
                       <Image 
                         src={post.image} 
                         alt={post.title} 
@@ -64,18 +64,32 @@ export default function BlogSection({ posts }: { posts: BlogPost[] }) {
                         loading="lazy"
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
-                    )}
-                    
-                    {/* 어둡게 덮는 막 (글씨 잘 보이게) */}
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
-                    
-                    {/* 카테고리 뱃지 */}
-                    <div className="absolute top-4 left-4 px-3 py-1 bg-black/50 backdrop-blur-md rounded-full text-xs text-white font-medium border border-white/10 z-10">
-                      {post.category}
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
+                      
+                      <div className="absolute top-4 left-4 px-3 py-1 bg-black/50 backdrop-blur-md rounded-full text-xs text-white font-medium border border-white/10 z-10">
+                        {post.category}
+                      </div>
                     </div>
-                  </div>
+                  )}
+
+                  {/* 사진이 없는 포스트이거나 모바일일 때 보여줄 대체 그라데이션 (선택사항) */}
+                  {/* 만약 모바일에서 아예 깔끔하게 텍스트만 보여주고 싶으면 이 block은 안 만지셔도 됩니다. */}
+                  {!post.image && (
+                    <div className={`h-48 w-full bg-gradient-to-br ${post.gradient} relative overflow-hidden`}>
+                      <div className="absolute top-4 left-4 px-3 py-1 bg-black/50 backdrop-blur-md rounded-full text-xs text-white font-medium border border-white/10 z-10">
+                        {post.category}
+                      </div>
+                    </div>
+                  )}
 
                   <div className="p-6 flex flex-col flex-grow">
+                    {/* 모바일에서 사진을 뺐으니 카테고리를 텍스트 위에 한 번 더 표시해주는 센스! */}
+                    <div className="md:hidden mb-2">
+                       <span className="px-2 py-0.5 bg-blue-500/20 text-blue-300 text-[10px] rounded-md border border-blue-500/30">
+                         {post.category}
+                       </span>
+                    </div>
+
                     <div className="flex items-center gap-2 text-xs text-gray-500 mb-4">
                       <span>{post.date}</span>
                       <span>•</span>
