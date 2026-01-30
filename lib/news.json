@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "date": "2026-01-20",
+    "category": "Publication",
+    "title": "Paper 'RevoNAD' accepted to CVPR 2026!",
+    "description": "Our work on Neural Architecture Search has been accepted for oral presentation."
+  },
+  {
+    "id": 2,
+    "date": "2025-11-15",
+    "category": "Award",
+    "title": "Best Paper Award at ICCV 2025 Workshop",
+    "description": "Honored to receive the Best Paper Award for our research on 3D Visual Navigation."
+  },
+  {
+    "id": 3,
+    "date": "2025-09-01",
+    "category": "Career",
+    "title": "Started Visiting Researcher at NYU",
+    "description": "Joined the Data Science Center at NYU as a visiting graduate researcher."
+  }
+]

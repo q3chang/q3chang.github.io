@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "RevoNAD: Revolutionary Neural Architecture Design for Continual Learning",
+    "authors": "Gyusam Chang, Sangpil Kim",
+    "venue": "CVPR 2026 (Under Review)",
+    "year": "2026",
+    "tags": ["Neural Architecture Search", "Continual Learning"],
+    "links": {
+      "pdf": "#",
+      "code": "https://github.com/gyusam-chang"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Efficient 3D Visual Navigation via Spatial Memory Networks",
+    "authors": "Gyusam Chang, Gil-dong Hong, Sangpil Kim",
+    "venue": "ICCV 2025",
+    "year": "2025",
+    "tags": ["3D Vision", "Robotics"],
+    "links": {
+      "pdf": "#",
+      "code": "#"
+    }
+  }
+]
