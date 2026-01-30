@@ -61,6 +61,7 @@ export default function BlogSection({ posts }: { posts: BlogPost[] }) {
                         src={post.image} 
                         alt={post.title} 
                         fill 
+                        loading="lazy"
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     )}
