@@ -34,8 +34,7 @@ export default function HeroSection() {
           </span>
         </h1>
         <p className="text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-          Exploring the frontiers of <span className="text-white font-semibold">Neural Architecture Search</span> and <span className="text-white font-semibold">Continual Learning</span>.
-          Building the next generation of AI.
+          Exploring the frontiers of <span className="text-white font-semibold">Agentic AI</span> to design efficient architecture and learning strategies for next generation of AI.
         </p>
         <div className="flex gap-6 justify-center mt-8">
           <Link href={links.linkedin} target="_blank" className={iconStyle}><Linkedin size={24} /></Link>
