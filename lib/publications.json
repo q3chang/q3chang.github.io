@@ -31,7 +31,7 @@
     "year": "2025",
     "tags": ["Autonomous Driving", "3D Object Detection", "Domain Generalization", "Domain Adaptation"],
     "links": {
-      "pdf": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6b7e1e96243c9edc378f85e7d232e415-Abstract-Conference.html",
+      "pdf": "https://arxiv.org/abs/2410.22461",
       "code": "#"
     }
   }
