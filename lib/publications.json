@@ -39,7 +39,7 @@
     "id": "1",
     "title": "CMDA: Cross-Modal and Domain Adversarial Adaptation for LiDAR-Based 3D Object Detection",
     "authors": "Gyusam Chang*, Wonseok Roh*, Sujin Jang, Dongwook Lee, Daehyun Ji, Gyeongrok Oh, Jinsun Park, Jinkyu Kim, Sangpil Kim",
-    "venue": "NeurIPS 2024",
+    "venue": "AAAI 2024",
     "year": "2025",
     "tags": ["Autonomous Driving", "3D Object Detection", "Domain Generalization", "Domain Adaptation"],
     "links": {
