@@ -1,18 +1,18 @@
 [
   {
-    "id": "3",
+    "id": "4",
     "title": "RevoNAD: Reflective Evolutionary Exploration for Neural Architecture Design",
     "authors": "Gyusam Chang, Jeongyoon Yoon, Shin han yi, JaeHyeok Lee, Sujin Jang, Sangpil Kim",
     "venue": "Pre-print",
     "year": "2026",
     "tags": ["Neural Architecture Search", "Neural Architecture Design"],
     "links": {
-      "pdf": "#",
+      "pdf": "https://arxiv.org/abs/2512.05403",
       "code": "#"
     }
   },
   {
-    "id": "2",
+    "id": "3",
     "title": "Reconstruction Using the Invisible: Intuition from NIR and Metadata for Enhanced 3D Gaussian Splatting",
     "authors": "Gyusam Chang, Tuan-Anh Vu, Vivek Alumootil, Harris Song, Deanna Pham, Sangpil Kim, M. Khalid Jawed",
     "venue": "AAAI 2026",
@@ -24,14 +24,26 @@
     }
   },
   {
-    "id": "1",
+    "id": "2",
     "title": "Unified Domain Generalization and Adaptation for Multi-view 3D Object Detection",
     "authors": "Gyusam Chang*, Jiwon Lee*, Donghyun Kim, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sujin Jang, Sangpil Kim",
     "venue": "NeurIPS 2024",
     "year": "2025",
     "tags": ["Autonomous Driving", "3D Object Detection", "Domain Generalization", "Domain Adaptation"],
     "links": {
-      "pdf": "#",
+      "pdf": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6b7e1e96243c9edc378f85e7d232e415-Abstract-Conference.html",
+      "code": "#"
+    }
+  }
+  {
+    "id": "1",
+    "title": "CMDA: Cross-Modal and Domain Adversarial Adaptation for LiDAR-Based 3D Object Detection",
+    "authors": "Gyusam Chang*, Wonseok Roh*, Sujin Jang, Dongwook Lee, Daehyun Ji, Gyeongrok Oh, Jinsun Park, Jinkyu Kim, Sangpil Kim",
+    "venue": "NeurIPS 2024",
+    "year": "2025",
+    "tags": ["Autonomous Driving", "3D Object Detection", "Domain Generalization", "Domain Adaptation"],
+    "links": {
+      "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/27857",
       "code": "#"
     }
   }
