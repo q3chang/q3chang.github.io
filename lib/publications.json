@@ -34,7 +34,7 @@
       "pdf": "https://arxiv.org/abs/2410.22461",
       "code": "#"
     }
-  }
+  },
   {
     "id": "1",
     "title": "CMDA: Cross-Modal and Domain Adversarial Adaptation for LiDAR-Based 3D Object Detection",
