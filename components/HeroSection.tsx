@@ -34,7 +34,7 @@ export default function HeroSection() {
           </span>
         </h1>
         <p className="text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-          Bridging deep theoretical insights with practical applications by addressing efficiency and domain generalization for the next generation of AI.
+          Bridging deep theoretical insights with practical applications by addressing efficiency for the next generation of AI
         </p>
         <div className="flex gap-6 justify-center mt-8">
           <Link href={links.linkedin} target="_blank" className={iconStyle}><Linkedin size={24} /></Link>
