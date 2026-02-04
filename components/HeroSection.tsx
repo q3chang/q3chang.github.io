@@ -6,8 +6,8 @@ import { Linkedin, Mail, FileText, GraduationCap } from 'lucide-react';
 
 export default function HeroSection() {
   const links = {
-    linkedin: "https://www.linkedin.com/in/규삼행님아이디/",
-    scholar: "https://scholar.google.com/citations?user=규삼행님아이디",
+    linkedin: "https://www.linkedin.com/in/gyusam-chang-735290231/",
+    scholar: "https://scholar.google.com/citations?user=7w4GZ8cAAAAJ&hl=ko&oi=ao",
     email: "mailto:gyusam@korea.ac.kr",
     cv: "/cv.pdf"
   };
@@ -34,7 +34,7 @@ export default function HeroSection() {
           </span>
         </h1>
         <p className="text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-          Exploring the frontiers of <span className="text-white font-semibold">Agentic AI</span> to design efficient architecture and learning strategies for next generation of AI.
+          Bridging deep theoretical insights with practical applications by addressing efficiency and domain generalization for the next generation of AI.
         </p>
         <div className="flex gap-6 justify-center mt-8">
           <Link href={links.linkedin} target="_blank" className={iconStyle}><Linkedin size={24} /></Link>
