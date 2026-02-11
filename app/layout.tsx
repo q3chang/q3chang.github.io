@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Gyusam Chang | AI Researcher',
   description: 'PhD Student in AI at Korea University',
+  icons: {
+    icon: 'app/favicon.png', 
+  },
 };
 
 export default function RootLayout({
