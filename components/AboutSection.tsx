@@ -47,7 +47,7 @@ export default function AboutSection() {
             where he worked with Principal Researcher Sujin Jang. 
             He also completed a Visiting Graduate Researcher program at the <span className="text-blue-400 font-bold">University of California, Los Angeles (UCLA)</span>, 
             working with Prof. M. Khalid Jawed. 
-            His research focuses on designing efficient and transferable frameworks that seamlessly adapt to complex real-world environments.
+            His research focuses on designing efficient, adaptive and transferable frameworks that seamlessly adapt to complex real-world environments.
           </p>
         </motion.div>
 
