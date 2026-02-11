@@ -42,12 +42,10 @@ export default function AboutSection() {
           className="mb-16 text-lg text-gray-300 leading-relaxed text-left" // 여기가 왼쪽 정렬입니다!
         >
           <p>
-            Gyusam Chang is a Ph.D. candidate at Korea University. 
-            He previously interned at <span className="text-blue-400 font-bold">Samsung Advanced Institute of Technology (SAIT)</span>, 
-            where he worked with Principal Researcher Sujin Jang. 
-            He also completed a Visiting Graduate Researcher program at the <span className="text-blue-400 font-bold">University of California, Los Angeles (UCLA)</span>, 
-            working with Prof. M. Khalid Jawed. 
-            His research focuses on designing efficient, adaptive and transferable frameworks that seamlessly adapt to complex real-world environments.
+            Gyusam Chang is a Ph.D. candidate at <span style={{color: '#8B0000', fontWeight: 'bold'}}>Korea University</span>. 
+            He previously interned at <span className="text-blue-400 font-bold">Samsung Advanced Institute of Technology (SAIT)</span>, where he worked with Principal Researcher Sujin Jang. 
+            He also completed a Visiting Graduate Researcher program at the <span className="text-blue-400 font-bold">University of California, Los Angeles (UCLA)</span>, working with Prof. M. Khalid Jawed. 
+            His research focuses on designing efficient, generalizable and transferable frameworks that seamlessly adapt to complex real-world environments.
           </p>
         </motion.div>
 
@@ -63,19 +61,19 @@ export default function AboutSection() {
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-lg">
             <li className="flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
-              Neural Architecture Search (NAS)
+              Domain Generalization/Adaptation
             </li>
             <li className="flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.8)]" />
-              Continual Learning
+              
             </li>
             <li className="flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.8)]" />
-              Computer Vision
+              Continual Learning
             </li>
             <li className="flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-yellow-500 shadow-[0_0_10px_rgba(234,179,8,0.8)]" />
-              Efficient AI Models
+              Parameter-Efficient Fine-Tuning
             </li>
           </ul>
         </motion.div>
