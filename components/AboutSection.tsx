@@ -65,7 +65,7 @@ export default function AboutSection() {
             </li>
             <li className="flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.8)]" />
-              
+              Parameter-Efficient Fine-Tuning
             </li>
             <li className="flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.8)]" />
@@ -73,7 +73,7 @@ export default function AboutSection() {
             </li>
             <li className="flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-yellow-500 shadow-[0_0_10px_rgba(234,179,8,0.8)]" />
-              Parameter-Efficient Fine-Tuning
+              Multi-modal Representation Learning
             </li>
           </ul>
         </motion.div>
