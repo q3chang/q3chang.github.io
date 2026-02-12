@@ -76,7 +76,7 @@ export default function AboutSection() {
             <span className="font-bold">Gyusam Chang</span> is a Ph.D. candidate at <span style={{color: '#8B0000', fontWeight: 'bold'}}>Korea University</span>. 
             He previously interned at <span className="text-blue-400 font-bold">Samsung Advanced Institute of Technology (SAIT)</span>, where he worked with Principal Researcher <span className="font-bold">Sujin Jang</span>. 
             He also completed a Visiting Graduate Researcher program at the <span className="text-blue-400 font-bold">University of California, Los Angeles (UCLA)</span>, working with Prof. <span className="font-bold">M. Khalid Jawed</span>. 
-            His research focuses on Bridging deep theoretical insights with practical applications through efficient, adaptive and transferable strategies for the next generation of AI.
+            His research focuses on bridging deep theoretical insights with practical applications through efficient, adaptive and transferable strategies for the next generation of AI.
           </p>
         </motion.div>
 
