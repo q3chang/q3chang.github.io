@@ -21,20 +21,33 @@ export default function Navbar() {
   useEffect(() => {
     if (pathname !== '/') return;
 
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
+    const sectionIds = navItems.map((item) => item.id);
+    const headerOffset = 100;
 
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+    const updateActiveSection = () => {
+      let current = sectionIds[0];
+
+      sectionIds.forEach((id) => {
+        const element = document.getElementById(id);
+        if (!element) return;
+
+        const sectionTop = element.offsetTop;
+        if (window.scrollY >= sectionTop - headerOffset) {
+          current = id;
+        }
+      });
+
+      setActiveSection(current);
+    };
+
+    updateActiveSection();
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
+    window.addEventListener('resize', updateActiveSection);
+
+    return () => {
+      window.removeEventListener('scroll', updateActiveSection);
+      window.removeEventListener('resize', updateActiveSection);
+    };
   }, [pathname]);
 
   const handleScroll = (e: React.MouseEvent, targetId: string) => {
