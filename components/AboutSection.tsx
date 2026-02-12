@@ -2,27 +2,28 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Linkedin, Mail, FileText, GraduationCap } from 'lucide-react';
 
 export default function AboutSection() {
-  return (
-    <section id="about" className="min-h-screen flex items-center justify-center py-20 px-6 relative z-10">
-      <div className="max-w-4xl w-full">
-        {/* 제목 */}
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-5xl font-bold mb-12 text-center"
-        >
-          About Me
-        </motion.h2>
+  const links = {
+    linkedin: 'https://www.linkedin.com/in/gyusam-chang-735290231/',
+    scholar: 'https://scholar.google.com/citations?user=7w4GZ8cAAAAJ&hl=ko&oi=ao',
+    email: 'mailto:gyusam@korea.ac.kr',
+    cv: '/cv.pdf',
+  };
+  const iconStyle =
+    'p-3 rounded-full bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-blue-500/20';
 
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center py-20 px-6 relative z-10">
+      <div className="max-w-4xl w-full">
         {/* 프로필 사진 (가운데 유지) */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="mb-12 flex justify-center"
+          className="mb-10 flex justify-center"
         >
           <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl">
             <Image 
@@ -34,6 +35,26 @@ export default function AboutSection() {
           </div>
         </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex gap-6 justify-center mb-12"
+        >
+          <Link href={links.linkedin} target="_blank" className={iconStyle}>
+            <Linkedin size={24} />
+          </Link>
+          <Link href={links.scholar} target="_blank" className={iconStyle}>
+            <GraduationCap size={24} />
+          </Link>
+          <Link href={links.cv} target="_blank" className={iconStyle}>
+            <FileText size={24} />
+          </Link>
+          <Link href={links.email} className={iconStyle}>
+            <Mail size={24} />
+          </Link>
+        </motion.div>
+
         {/* 🔥 [핵심 변경 1] 텍스트 왼쪽 정렬 (text-left) */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -42,10 +63,10 @@ export default function AboutSection() {
           className="mb-16 text-lg text-gray-300 leading-relaxed text-left" // 여기가 왼쪽 정렬입니다!
         >
           <p>
-            Gyusam Chang is a Ph.D. candidate at <span style={{color: '#8B0000', fontWeight: 'bold'}}>Korea University</span>. 
-            He previously interned at <span className="text-blue-400 font-bold">Samsung Advanced Institute of Technology (SAIT)</span>, where he worked with Principal Researcher Sujin Jang. 
-            He also completed a Visiting Graduate Researcher program at the <span className="text-blue-400 font-bold">University of California, Los Angeles (UCLA)</span>, working with Prof. M. Khalid Jawed. 
-            His research focuses on designing efficient, generalizable and transferable frameworks that seamlessly adapt to complex real-world environments.
+            <span className="font-bold">Gyusam Chang</span> is a Ph.D. candidate at <span style={{color: '#8B0000', fontWeight: 'bold'}}>Korea University</span>. 
+            He previously interned at <span className="text-blue-400 font-bold">Samsung Advanced Institute of Technology (SAIT)</span>, where he worked with Principal Researcher <span className="font-bold">Sujin Jang</span>. 
+            He also completed a Visiting Graduate Researcher program at the <span className="text-blue-400 font-bold">University of California, Los Angeles (UCLA)</span>, working with Prof. <span className="font-bold">M. Khalid Jawed</span>. 
+            His research focuses on Bridging deep theoretical insights with practical applications through efficient, adaptive and transferable strategies for the next generation of AI.
           </p>
         </motion.div>
 

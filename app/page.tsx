@@ -1,6 +1,5 @@
 // 'use client';  <-- 이거 지웁니다! 이제 여긴 서버 땅입니다!
 
-import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import NewsSection from '@/components/NewsSection';
 import PublicationsSection from '@/components/PublicationsSection';
@@ -22,7 +21,6 @@ export default function Home() {
         <div className="hidden md:block absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] opacity-50" />
       </div>
 
-      <HeroSection />
       <AboutSection />
       <NewsSection />
       <PublicationsSection />
