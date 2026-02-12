@@ -23,7 +23,7 @@ export default function AboutSection() {
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="mb-10 flex justify-center"
+          className="mb-8 flex justify-center"
         >
           <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl">
             <Image 
@@ -39,7 +39,17 @@ export default function AboutSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex gap-6 justify-center mb-12"
+          className="text-center mb-6"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Gyusam Chang</h2>
+          <p className="text-base md:text-lg text-gray-400 mt-2">Ph.D. Candidate in Artificial Intelligence</p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex gap-6 justify-center mb-10"
         >
           <Link href={links.linkedin} target="_blank" className={iconStyle}>
             <Linkedin size={24} />
@@ -60,7 +70,7 @@ export default function AboutSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 text-lg text-gray-300 leading-relaxed text-left" // 여기가 왼쪽 정렬입니다!
+          className="mb-10 text-lg text-gray-300 leading-relaxed text-left" // 여기가 왼쪽 정렬입니다!
         >
           <p>
             <span className="font-bold">Gyusam Chang</span> is a Ph.D. candidate at <span style={{color: '#8B0000', fontWeight: 'bold'}}>Korea University</span>. 
@@ -76,9 +86,9 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           // 아래 스타일이 Vision에서 쓰던 그 스타일입니다!
-          className="w-full p-8 rounded-3xl bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 backdrop-blur-sm"
+          className="w-full p-6 rounded-3xl bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/20 backdrop-blur-sm"
         >
-          <h3 className="text-2xl font-bold mb-6 text-blue-300">Research Interests</h3>
+          <h3 className="text-2xl font-bold mb-4 text-blue-300">Research Interests</h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-lg">
             <li className="flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
