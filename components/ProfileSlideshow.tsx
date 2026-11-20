@@ -8,6 +8,7 @@ const photos = [
   { src: '/me2.jpeg', position: '35% 50%' },
   { src: '/me3.jpeg', position: '60% 50%' },
   { src: '/me4.jpeg', position: '50% 50%' },
+  { src: '/me5.jpeg', position: '50% 50%' },
 ];
 
 export default function ProfileSlideshow() {
