@@ -38,11 +38,13 @@ export default function PublicationsSection() {
               <p className="publication-venue">
                 <em>{pub.venue.replace(/\s+\d{4}$/, '')}, {pub.year}.</em>
               </p>
-              <ul className="publication-links" aria-label={`Links for ${pub.title}`}>
-                {hasLink(pub.links.pdf) && <li><a href={pub.links.pdf} target="_blank" rel="noreferrer">paper</a></li>}
-                {hasLink(pub.links.code) && <li><a href={pub.links.code} target="_blank" rel="noreferrer">code</a></li>}
-                {!hasLink(pub.links.pdf) && hasLink(pub.links.source) && <li><a href={pub.links.source} target="_blank" rel="noreferrer">details</a></li>}
-              </ul>
+              {Object.values(pub.links).some(hasLink) ? (
+                <ul className="publication-links" aria-label={`Links for ${pub.title}`}>
+                  {hasLink(pub.links.pdf) && <li><a href={pub.links.pdf} target="_blank" rel="noreferrer">paper</a></li>}
+                  {hasLink(pub.links.code) && <li><a href={pub.links.code} target="_blank" rel="noreferrer">code</a></li>}
+                  {!hasLink(pub.links.pdf) && hasLink(pub.links.source) && <li><a href={pub.links.source} target="_blank" rel="noreferrer">details</a></li>}
+                </ul>
+              ) : <p className="publication-links">TBD</p>}
             </div>
           </article>
         ))}

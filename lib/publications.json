@@ -10,9 +10,7 @@
       "Agentic Optimization",
       "Representation Learning"
     ],
-    "links": {
-      "pdf": "/papers/semantic-relaxation.pdf"
-    },
+    "links": {},
     "image": "/research/semantic-relaxation.png",
     "imageSource": "/papers/semantic-relaxation.pdf#page=2"
   },
@@ -28,11 +26,7 @@
       "3D Object Detection",
       "Domain Generalization"
     ],
-    "links": {
-      "pdf": "",
-      "code": "",
-      "source": "https://hpi-lab.org/publications/"
-    },
+    "links": {},
     "image": "/research/cmdg.png",
     "imageSource": "https://hpi-lab.org/assets/img/publication_preview/cmdg_2026.png"
   },
