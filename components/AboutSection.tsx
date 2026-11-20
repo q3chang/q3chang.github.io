@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { FileText, GraduationCap, Linkedin, Mail } from 'lucide-react';
+import ProfileSlideshow from './ProfileSlideshow';
 
 const profileLinks = [
   { label: 'Email', href: 'mailto:gsjang95@korea.ac.kr', icon: Mail },
@@ -38,9 +38,7 @@ export default function AboutSection() {
           for the next generation of AI.
         </p>
       </div>
-      <div className="profile-photo">
-        <Image src="/me.JPG" alt="Gyusam Chang" fill priority sizes="(max-width: 700px) 190px, 240px" />
-      </div>
+      <ProfileSlideshow />
     </section>
   );
 }

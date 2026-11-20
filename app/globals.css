@@ -33,8 +33,18 @@ p { margin: 0; }
 .profile-copy { width: 100%; }
 .profile h1 { margin: 0 0 6px; text-align: left; font-size: 32px; line-height: 1.2; font-weight: 700; letter-spacing: -.5px; }
 .profile-copy > p { margin-bottom: 14px; }
-.profile-photo { position: relative; width: 240px; aspect-ratio: 4 / 5; overflow: hidden; }
+.profile-slideshow { width: 240px; }
+.profile-photo { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; }
 .profile-photo img { object-fit: cover; object-position: 50% 45%; }
+.profile-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 650ms ease-in-out; pointer-events: none; }
+.profile-slide.is-active { opacity: 1; }
+.profile-slideshow-controls { display: flex; align-items: center; justify-content: center; gap: 4px; margin-top: 6px; }
+.profile-slideshow-controls button { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; border: 0; border-radius: 4px; color: #555; background: transparent; cursor: pointer; }
+.profile-slideshow-controls button:hover:not(:disabled) { color: var(--link); background: #edf5fd; }
+.profile-slideshow-controls button:disabled { opacity: .4; cursor: default; }
+.profile-slideshow-controls button:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.profile-slide-dot { width: 6px; height: 6px; border-radius: 50%; background: #aaa; }
+.profile-slideshow-controls button[aria-current="true"] .profile-slide-dot { background: var(--foreground); }
 .profile-links, .publication-links { display: flex; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; gap: 4px 0; }
 .profile-links { justify-content: flex-start; gap: 8px; margin: 0 0 14px -10px; font-size: 14px; }
 .publication-links li + li::before { content: '/'; color: #666; padding: 0 9px; }
@@ -79,7 +89,7 @@ h2 { font-size: 24px; font-weight: 700; line-height: 1.3; margin: 0 0 16px; }
 
 @media (max-width: 700px) {
   .profile { display: flex; flex-direction: column-reverse; gap: 24px; padding-top: 28px; }
-  .profile-photo { width: 190px; }
+  .profile-slideshow { width: 190px; }
   .profile h1 { font-size: 30px; }
   .news-section { padding-top: 22px; }
   .news-row { grid-template-columns: 78px minmax(0, 1fr); gap: 10px; margin-bottom: 10px; }
@@ -95,4 +105,5 @@ h2 { font-size: 24px; font-weight: 700; line-height: 1.3; margin: 0 0 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .profile-slide { transition: none; }
 }
