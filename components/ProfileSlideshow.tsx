@@ -1,8 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Pause, Play } from 'lucide-react';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const photos = [
   { src: '/me1.JPG', position: '50% 45%' },
@@ -13,15 +12,13 @@ const photos = [
 
 export default function ProfileSlideshow() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [loaded, setLoaded] = useState<boolean[]>(photos.map(() => false));
-  const toggleRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
     const respectPreference = () => {
-      if (preference.matches) setIsPaused(true);
+      setPrefersReducedMotion(preference.matches);
     };
     respectPreference();
     preference.addEventListener('change', respectPreference);
@@ -30,10 +27,10 @@ export default function ProfileSlideshow() {
 
   useEffect(() => {
     const nextIndex = (activeIndex + 1) % photos.length;
-    if (isPaused || isHovered || !loaded[activeIndex] || !loaded[nextIndex]) return;
+    if (prefersReducedMotion || !loaded[activeIndex] || !loaded[nextIndex]) return;
     const timer = window.setTimeout(() => setActiveIndex(nextIndex), 4000);
     return () => window.clearTimeout(timer);
-  }, [activeIndex, isPaused, isHovered, loaded]);
+  }, [activeIndex, prefersReducedMotion, loaded]);
 
   return (
     <div
@@ -41,13 +38,8 @@ export default function ProfileSlideshow() {
       role="region"
       aria-roledescription="carousel"
       aria-label="Photos of Gyusam Chang"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      onFocusCapture={(event) => {
-        if (!toggleRef.current?.contains(event.target)) setIsPaused(true);
-      }}
     >
-      <div className="profile-photo" aria-live={isPaused ? 'polite' : 'off'}>
+      <div className="profile-photo" aria-live="off">
         {photos.map((photo, index) => (
           <div
             key={photo.src}
@@ -68,32 +60,6 @@ export default function ProfileSlideshow() {
               onLoad={() => setLoaded((current) => current.map((ready, i) => ready || i === index))}
             />
           </div>
-        ))}
-      </div>
-      <div className="profile-slideshow-controls">
-        <button
-          ref={toggleRef}
-          type="button"
-          aria-label={isPaused ? 'Play slideshow' : 'Pause slideshow'}
-          title={isPaused ? 'Play slideshow' : 'Pause slideshow'}
-          onClick={() => setIsPaused((paused) => !paused)}
-        >
-          {isPaused ? <Play size={14} aria-hidden="true" /> : <Pause size={14} aria-hidden="true" />}
-        </button>
-        {photos.map((photo, index) => (
-          <button
-            key={photo.src}
-            type="button"
-            disabled={!loaded[index]}
-            aria-label={`Show photo ${index + 1}`}
-            aria-current={index === activeIndex ? 'true' : undefined}
-            onClick={() => {
-              setActiveIndex(index);
-              setIsPaused(true);
-            }}
-          >
-            <span className="profile-slide-dot" aria-hidden="true" />
-          </button>
         ))}
       </div>
     </div>
