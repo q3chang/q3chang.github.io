@@ -1,15 +1,57 @@
 [
   {
+    "id": "6",
+    "title": "Semantic Relaxation with Large Language Models",
+    "authors": "Gyusam Chang, Jeongyoon Yoon, Sangpil Kim",
+    "venue": "Pre-print",
+    "year": "2026",
+    "tags": [
+      "Large Language Models",
+      "Agentic Optimization",
+      "Representation Learning"
+    ],
+    "links": {
+      "pdf": "/papers/semantic-relaxation.pdf"
+    },
+    "image": "/research/semantic-relaxation.png",
+    "imageSource": "/papers/semantic-relaxation.pdf#page=2"
+  },
+  {
+    "id": "5",
+    "title": "Cross-Modal Domain Generalization for Multi-View 3D Object Detection",
+    "authors": "Gyusam Chang, Jiwon Lee, Wonjeong Ryoo, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sujin Jang, Sangpil Kim",
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "year": "2026",
+    "status": "Accepted",
+    "tags": [
+      "Autonomous Driving",
+      "3D Object Detection",
+      "Domain Generalization"
+    ],
+    "links": {
+      "pdf": "",
+      "code": "",
+      "source": "https://hpi-lab.org/publications/"
+    },
+    "image": "/research/cmdg.png",
+    "imageSource": "https://hpi-lab.org/assets/img/publication_preview/cmdg_2026.png"
+  },
+  {
     "id": "4",
     "title": "RevoNAD: Reflective Evolutionary Exploration for Neural Architecture Design",
     "authors": "Gyusam Chang, Jeongyoon Yoon, Shin han yi, JaeHyeok Lee, Sujin Jang, Sangpil Kim",
     "venue": "Pre-print",
     "year": "2026",
-    "tags": ["Neural Architecture Search", "Neural Architecture Design"],
+    "tags": [
+      "Neural Architecture Search",
+      "Neural Architecture Design"
+    ],
     "links": {
       "pdf": "https://arxiv.org/abs/2512.05403",
       "code": "#"
-    }
+    },
+    "image": "/research/revonad.png",
+    "imageSource": "https://hpi-lab.org/assets/img/publication_preview/revonad_2026.png"
   },
   {
     "id": "3",
@@ -17,34 +59,54 @@
     "authors": "Gyusam Chang, Tuan-Anh Vu, Vivek Alumootil, Harris Song, Deanna Pham, Sangpil Kim, M. Khalid Jawed",
     "venue": "AAAI 2026",
     "year": "2026",
-    "tags": ["3D Reconstruction", "Gaussian Splatting", "Neural Radiance Fields"],
+    "tags": [
+      "3D Reconstruction",
+      "Gaussian Splatting",
+      "Neural Radiance Fields"
+    ],
     "links": {
       "pdf": "https://arxiv.org/abs/2508.14443",
       "code": "#"
-    }
+    },
+    "image": "/research/nirsplat.png",
+    "imageSource": "https://arxiv.org/html/2508.14443v1/fig_1.png"
   },
   {
     "id": "2",
     "title": "Unified Domain Generalization and Adaptation for Multi-view 3D Object Detection",
     "authors": "Gyusam Chang*, Jiwon Lee*, Donghyun Kim, Jinkyu Kim, Dongwook Lee, Daehyun Ji, Sujin Jang, Sangpil Kim",
     "venue": "NeurIPS 2024",
-    "year": "2025",
-    "tags": ["Autonomous Driving", "3D Object Detection", "Domain Generalization", "Domain Adaptation"],
+    "year": "2024",
+    "tags": [
+      "Autonomous Driving",
+      "3D Object Detection",
+      "Domain Generalization",
+      "Domain Adaptation"
+    ],
     "links": {
       "pdf": "https://arxiv.org/abs/2410.22461",
       "code": "#"
-    }
+    },
+    "image": "/research/udga.png",
+    "imageSource": "https://hpi-lab.org/assets/img/publication_preview/udga_2024.png"
   },
   {
     "id": "1",
     "title": "CMDA: Cross-Modal and Domain Adversarial Adaptation for LiDAR-Based 3D Object Detection",
     "authors": "Gyusam Chang*, Wonseok Roh*, Sujin Jang, Dongwook Lee, Daehyun Ji, Gyeongrok Oh, Jinsun Park, Jinkyu Kim, Sangpil Kim",
     "venue": "AAAI 2024",
-    "year": "2025",
-    "tags": ["Autonomous Driving", "3D Object Detection", "Domain Generalization", "Domain Adaptation"],
+    "year": "2024",
+    "tags": [
+      "Autonomous Driving",
+      "3D Object Detection",
+      "Domain Generalization",
+      "Domain Adaptation"
+    ],
     "links": {
       "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/27857",
       "code": "#"
-    }
+    },
+    "image": "/research/cmda.png",
+    "imageSource": "https://hpi-lab.org/assets/img/publication_preview/cmda_2024.png"
   }
 ]

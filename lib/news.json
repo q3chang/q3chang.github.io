@@ -1,37 +1,78 @@
 [
   {
+    "id": "6",
+    "date": "Nov. 2026",
+    "dateTime": "2026-11",
+    "category": "Publication",
+    "title": "CMDG accepted to IEEE T-IV",
+    "description": "Our paper 'CMDG' has been accepted to IEEE Transactions on Intelligent Vehicles!",
+    "paper": "CMDG",
+    "venue": "IEEE Transactions on Intelligent Vehicles"
+  },
+  {
     "id": "5",
     "date": "Nov. 2025",
     "category": "Publication",
     "title": "NIRSplat accepted at AAAI 2026",
-    "description": "Our paper 'NIRSplat' has been accepted to AAAI 2026!"
+    "description": "Our paper 'NIRSplat' has been accepted to AAAI 2026!",
+    "paper": "NIRSplat",
+    "venue": "AAAI 2026",
+    "dateTime": "2025-11"
+  },
+  {
+    "id": "7",
+    "date": "2025",
+    "dateTime": "2025",
+    "category": "Award",
+    "title": "Samsung Electronics DS Division Best Paper Award",
+    "description": "Samsung Electronics DS Division Best Paper Award (DBPA) for our paper 'UDGA'!",
+    "paper": "UDGA",
+    "organizations": [
+      "Samsung Electronics DS Division"
+    ]
   },
   {
     "id": "4",
     "date": "Sep. 2024",
     "category": "Publication",
     "title": "UDGA accepted at NeurIPS 2024",
-    "description": "Our paper 'UDGA' was accepted to NeurIPS 2024!"
+    "description": "Our paper 'UDGA' was accepted to NeurIPS 2024!",
+    "paper": "UDGA",
+    "venue": "NeurIPS 2024",
+    "dateTime": "2024-09"
   },
   {
     "id": "3",
     "date": "Sep. 2024",
     "category": "Career",
     "title": "Started as Visiting Researcher at UCLA",
-    "description": "Joined SCI Lab at UCLA as a Visiting Graduate Researcher!"
+    "description": "Joined SCI Lab at UCLA as a Visiting Graduate Researcher!",
+    "organizations": [
+      "SCI Lab",
+      "UCLA"
+    ],
+    "dateTime": "2024-09"
   },
   {
     "id": "2",
     "date": "Sep. 2023",
     "category": "Publication",
     "title": "CMDA accepted at AAAI 2024",
-    "description": "Our paper 'CMDA' was accepted to AAAI 2024!"
+    "description": "Our paper 'CMDA' was accepted to AAAI 2024!",
+    "paper": "CMDA",
+    "venue": "AAAI 2024",
+    "dateTime": "2023-09"
   },
   {
     "id": "1",
     "date": "Jun. 2023",
     "category": "Career",
     "title": "Started Research Internship at SAIT",
-    "description": "Joined CV Lab at Samsung Advanced Institute of Technology (SAIT) as a Research Intern!"
+    "description": "Joined CV Lab at Samsung Advanced Institute of Technology (SAIT) as a Research Intern!",
+    "organizations": [
+      "CV Lab",
+      "Samsung Advanced Institute of Technology (SAIT)"
+    ],
+    "dateTime": "2023-06"
   }
 ]

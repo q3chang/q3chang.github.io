@@ -1,57 +1,50 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import { Calendar, Tag } from 'lucide-react';
 import newsData from '@/lib/news.json';
 
+interface NewsItem {
+  id: string;
+  date: string;
+  dateTime?: string;
+  category: string;
+  title: string;
+  description: string;
+  paper?: string;
+  venue?: string;
+  organizations?: string[];
+}
+
+function NewsDescription({ item }: { item: NewsItem }) {
+  const terms = [
+    ...(item.paper ? [{ text: item.paper, className: 'news-paper' }] : []),
+    ...(item.venue ? [{ text: item.venue, className: 'news-venue' }] : []),
+    ...(item.organizations ?? []).map((text) => ({ text, className: 'news-organization' })),
+  ].sort((a, b) => b.text.length - a.text.length);
+
+  if (terms.length === 0) return item.description;
+
+  const pattern = new RegExp(`(${terms.map(({ text }) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
+  return item.description.split(pattern).map((part, index) => {
+    const term = terms.find(({ text }) => text === part);
+    return term ? <strong key={index} className={term.className}>{part}</strong> : part;
+  });
+}
+
 export default function NewsSection() {
-  // 🔥 [핵심 수정] ID 숫자가 큰 순서대로 정렬하고 -> 상위 5개만 자름!
-  const sortedNews = [...newsData]
-    .sort((a, b) => Number(b.id) - Number(a.id)) // 3, 2, 1 순서
-    .slice(0, 5); // 5개만 컷!
+  const sortedNews: NewsItem[] = [...newsData].sort((a, b) => (b.dateTime ?? '').localeCompare(a.dateTime ?? ''));
 
   return (
-    <section id="news" className="min-h-screen flex items-center justify-center py-20 px-6 relative z-10">
-      <div className="max-w-3xl w-full">
-        <motion.h2 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-5xl font-bold mb-16 text-center"
-        >
-          Latest News
-        </motion.h2>
-
-        <div className="relative border-l border-white/10 ml-4 md:ml-10 pl-8 md:pl-12 space-y-12">
-          {/* sortedNews를 씁니다 (전체 newsData 아님!) */}
-          {sortedNews.map((item, index) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: index * 0.1 }}
-              className="relative"
-            >
-              <span className="absolute -left-[41px] md:-left-[57px] top-1 h-5 w-5 rounded-full bg-black border-2 border-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.5)]" />
-              
-              <div className="flex items-center gap-4 text-sm mb-2 text-gray-500">
-                <div className="flex items-center gap-1 text-blue-300 font-mono">
-                  <Calendar size={14} />{item.date}
-                </div>
-                <div className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-xs">
-                  <Tag size={12} />{item.category}
-                </div>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
-                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-gray-400">{item.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+    <section id="news" className="news-section" aria-labelledby="news-heading">
+      <h2 id="news-heading">News</h2>
+      <ul className="news-list">
+        {sortedNews.map((item) => (
+          <li key={item.id} className="news-row">
+            <time dateTime={item.dateTime}>{item.date}</time>
+            <p>
+              <span className="news-symbol" aria-hidden="true">{item.category === 'Award' ? '🏆' : item.category === 'Publication' ? '🎉' : '🎓'}</span>
+              <NewsDescription item={item} />
+            </p>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

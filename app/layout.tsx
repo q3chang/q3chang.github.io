@@ -1,26 +1,22 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/Navbar'; // 방금 만든 그놈 불러옵니다
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Gyusam Chang | AI Researcher',
-  description: 'PhD Student in AI at Korea University',
+  metadataBase: new URL('https://q3chang.github.io'),
+  title: 'Gyusam Chang | Home',
+  description: 'Gyusam Chang is a Ph.D. candidate in Artificial Intelligence at Korea University. His research focuses on bridging deep theoretical insights with practical applications for the next generation of AI.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {/* 네비게이션 바를 맨 위에 고정! */}
-        <Navbar /> 
+      <body>
+        <a className="skip-link" href="#main-content">Skip to content</a>
         {children}
+        <footer className="page-shell site-footer">
+          Gyusam Chang <span aria-hidden="true">/</span>{' '}
+          <a href="mailto:gsjang95@korea.ac.kr">gsjang95@korea.ac.kr</a>
+        </footer>
       </body>
     </html>
   );

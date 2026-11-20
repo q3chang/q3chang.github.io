@@ -9,7 +9,7 @@ export default function HeroSection() {
   const links = {
     linkedin: "https://www.linkedin.com/in/gyusam-chang-735290231/",
     scholar: "https://scholar.google.com/citations?user=7w4GZ8cAAAAJ&hl=ko&oi=ao",
-    email: "mailto:gyusam@korea.ac.kr",
+    email: "mailto:gsjang95@korea.ac.kr",
     cv: "/cv.pdf"
   };
   const iconStyle = "p-3 rounded-full bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-blue-500/20";
