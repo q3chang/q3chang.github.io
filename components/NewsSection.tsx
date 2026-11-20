@@ -8,14 +8,15 @@ interface NewsItem {
   title: string;
   description: string;
   paper?: string;
-  venue?: string;
+  venue?: string | string[];
   organizations?: string[];
 }
 
 function NewsDescription({ item }: { item: NewsItem }) {
+  const venues = Array.isArray(item.venue) ? item.venue : item.venue ? [item.venue] : [];
   const terms = [
     ...(item.paper ? [{ text: item.paper, className: 'news-paper' }] : []),
-    ...(item.venue ? [{ text: item.venue, className: 'news-venue' }] : []),
+    ...venues.map((text) => ({ text, className: 'news-venue' })),
     ...(item.organizations ?? []).map((text) => ({ text, className: 'news-organization' })),
   ].sort((a, b) => b.text.length - a.text.length);
 

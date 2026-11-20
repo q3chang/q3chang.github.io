@@ -13,10 +13,14 @@
     "id": "5",
     "date": "Nov. 2025",
     "category": "Publication",
-    "title": "NIRSplat accepted at AAAI 2026",
-    "description": "Our paper 'NIRSplat' has been accepted to AAAI 2026!",
+    "title": "NIRSplat accepted at AAAI 2026 and the CVPR 2025 workshop",
+    "description": "Our paper 'NIRSplat' has been accepted to AAAI 2026 and the 2nd Workshop on Neural Fields Beyond Conventional Cameras at CVPR 2025!",
     "paper": "NIRSplat",
-    "venue": "AAAI 2026",
+    "venue": [
+      "AAAI 2026",
+      "2nd Workshop on Neural Fields Beyond Conventional Cameras",
+      "CVPR 2025"
+    ],
     "dateTime": "2025-11"
   },
   {
