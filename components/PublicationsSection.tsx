@@ -7,6 +7,7 @@ interface Publication {
   authors: string;
   venue: string;
   year: string;
+  additionalVenues?: string[];
   image?: string;
   links: { pdf?: string; code?: string; source?: string };
 }
@@ -36,7 +37,10 @@ export default function PublicationsSection() {
                 ))}
               </p>}
               <p className="publication-venue">
-                <em>{pub.venue.replace(/\s+\d{4}$/, '')}, {pub.year}.</em>
+                <em>
+                  {pub.venue.replace(/\s+\d{4}$/, '')}, {pub.year}.
+                  {pub.additionalVenues?.map((venue) => <span key={venue}> / {venue}.</span>)}
+                </em>
               </p>
               {Object.values(pub.links).some(hasLink) ? (
                 <ul className="publication-links" aria-label={`Links for ${pub.title}`}>
