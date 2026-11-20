@@ -31,7 +31,7 @@ p { margin: 0; }
 
 .profile { display: grid; grid-template-columns: minmax(0, 1fr) 240px; align-items: center; gap: 28px; padding: 32px 0 22px; }
 .profile-copy { width: 100%; }
-.profile h1 { margin: 0 0 6px; text-align: left; font-size: 32px; line-height: 1.2; font-weight: 400; letter-spacing: -.5px; }
+.profile h1 { margin: 0 0 6px; text-align: left; font-size: 32px; line-height: 1.2; font-weight: 700; letter-spacing: -.5px; }
 .profile-copy > p { margin-bottom: 14px; }
 .profile-photo { position: relative; width: 240px; height: 240px; overflow: hidden; border-radius: 50%; }
 .profile-photo img { object-fit: cover; object-position: 50% 45%; }
