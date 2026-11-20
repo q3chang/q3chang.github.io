@@ -13,16 +13,6 @@ export default function AboutSection() {
     <section id="home" className="profile" aria-labelledby="profile-name">
       <div className="profile-copy">
         <h1 id="profile-name">Gyusam Chang</h1>
-        <p className="profile-role">Ph.D. Candidate, Korea University</p>
-        <p>
-          I am a Ph.D. candidate in Artificial Intelligence at{' '}
-          <a href="https://www.korea.edu/" target="_blank" rel="noreferrer">Korea University</a>.
-          I previously interned at Samsung Advanced Institute of Technology (SAIT),
-          working with Sujin Jang, and was a visiting graduate researcher at UCLA,
-          working with Prof. M. Khalid Jawed.
-          My research focuses on bridging deep theoretical insights with practical applications
-          for the next generation of AI.
-        </p>
         <ul className="profile-links" aria-label="Contact and academic profiles">
           {profileLinks.map(({ label, href, icon: Icon }) => (
             <li key={label}>
@@ -38,6 +28,15 @@ export default function AboutSection() {
             </li>
           ))}
         </ul>
+        <p>
+          I am a Ph.D. candidate in Artificial Intelligence at{' '}
+          <a href="https://www.korea.edu/" target="_blank" rel="noreferrer">Korea University</a>.
+          I previously interned at Samsung Advanced Institute of Technology (SAIT),
+          working with Sujin Jang, and was a visiting graduate researcher at UCLA,
+          working with Prof. M. Khalid Jawed.
+          My research focuses on bridging deep theoretical insights with practical applications
+          for the next generation of AI.
+        </p>
       </div>
       <div className="profile-photo">
         <Image src="/me.JPG" alt="Gyusam Chang" fill priority sizes="(max-width: 700px) 190px, 240px" />
