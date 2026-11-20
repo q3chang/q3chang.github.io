@@ -4,7 +4,10 @@ export default function ExperiencesSection() {
       <h2 id="experiences-heading">Experiences</h2>
       <div className="experience-list">
         <article className="experience-entry">
-          <h3 className="experience-institution">University of California, Los Angeles (UCLA), USA</h3>
+          <h3 className="experience-institution">
+            <span>University of California, Los Angeles (UCLA)</span>{' '}
+            <span className="experience-location">USA</span>
+          </h3>
           <p className="experience-lab">Structures-Computer Interaction Lab</p>
           <div className="experience-role-row">
             <p className="experience-role">Visiting Graduate Researcher</p>
@@ -14,7 +17,10 @@ export default function ExperiencesSection() {
         </article>
 
         <article className="experience-entry">
-          <h3 className="experience-institution">Samsung Advanced Institute of Technology (SAIT), South Korea</h3>
+          <h3 className="experience-institution">
+            <span>Samsung Advanced Institute of Technology (SAIT)</span>{' '}
+            <span className="experience-location">South Korea</span>
+          </h3>
           <p className="experience-lab">Computer Vision Lab</p>
           <div className="experience-role-row">
             <p className="experience-role">Research Internship</p>
