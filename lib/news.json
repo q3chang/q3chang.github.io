@@ -5,7 +5,7 @@
     "dateTime": "2026-11",
     "category": "Publication",
     "title": "CMDG accepted to IEEE T-IV",
-    "description": "Our paper 'CMDG' has been accepted to IEEE Transactions on Intelligent Vehicles!",
+    "description": "Our paper 'CMDG' was accepted to IEEE Transactions on Intelligent Vehicles!",
     "paper": "CMDG",
     "venue": "IEEE Transactions on Intelligent Vehicles"
   },
@@ -14,7 +14,7 @@
     "date": "Nov. 2025",
     "category": "Publication",
     "title": "NIRSplat accepted at AAAI 2026",
-    "description": "Our paper 'NIRSplat' has been accepted to AAAI 2026!",
+    "description": "Our paper 'NIRSplat' was accepted to AAAI 2026!",
     "paper": "NIRSplat",
     "venue": "AAAI 2026",
     "dateTime": "2025-11"
@@ -53,6 +53,15 @@
     "paper": "UDGA",
     "venue": "NeurIPS 2024",
     "dateTime": "2024-09"
+  },
+  {
+    "id": "9",
+    "date": "Sep. 2024",
+    "dateTime": "2024-09-03",
+    "category": "Talk",
+    "title": "Invited talk at Baemin",
+    "description": "Gave an invited talk at Baemin!",
+    "organizations": ["Baemin"]
   },
   {
     "id": "3",

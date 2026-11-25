@@ -7,6 +7,7 @@ interface Publication {
   authors: string;
   venue: string;
   year: string;
+  award?: string;
   additionalVenues?: string[];
   image?: string;
   links: { pdf?: string; code?: string; source?: string };
@@ -38,7 +39,8 @@ export default function PublicationsSection() {
               </p>}
               <p className="publication-venue">
                 <em>
-                  {pub.venue.replace(/\s+\d{4}$/, '')}, {pub.year}.
+                  {pub.venue.replace(/\s+\d{4}$/, '')}, {pub.year}
+                  {pub.award && <> / <strong className="publication-award">{pub.award}</strong></>}.
                   {pub.additionalVenues?.map((venue) => <span key={venue}> / {venue}.</span>)}
                 </em>
               </p>

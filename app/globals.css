@@ -33,11 +33,8 @@ p { margin: 0; }
 .profile-copy { width: 100%; }
 .profile h1 { margin: 0 0 6px; text-align: left; font-size: 32px; line-height: 1.2; font-weight: 700; letter-spacing: -.5px; }
 .profile-copy > p { margin-bottom: 14px; }
-.profile-slideshow { width: 240px; }
-.profile-photo { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; }
+.profile-photo { position: relative; width: 240px; aspect-ratio: 4 / 5; overflow: hidden; }
 .profile-photo img { object-fit: cover; object-position: 50% 45%; }
-.profile-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 650ms ease-in-out; pointer-events: none; }
-.profile-slide.is-active { opacity: 1; }
 .profile-links, .publication-links { display: flex; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; gap: 4px 0; }
 .profile-links { justify-content: flex-start; gap: 8px; margin: 0 0 14px -10px; font-size: 14px; }
 .publication-links li + li::before { content: '/'; color: #666; padding: 0 9px; }
@@ -52,9 +49,28 @@ h2 { font-size: 24px; font-weight: 700; line-height: 1.3; margin: 0 0 16px; }
 .news-row p { color: #555; font-size: 16px; }
 .news-row strong { font-weight: 600; }
 .news-paper { color: #1f5d99; }
-.news-venue { color: #853d3d; }
+.news-venue, .publication-award { color: #853d3d; }
 .news-organization { color: #2f6d52; }
 .news-symbol { padding-right: 6px; }
+.older-news { display: flex; flex-direction: column; }
+.older-news > summary { order: 1; display: grid; width: fit-content; padding-block: 4px; color: var(--link); font-size: 14px; cursor: pointer; }
+.older-news > summary::-webkit-details-marker { display: none; }
+.older-news > summary > span { grid-area: 1 / 1; }
+.older-news .news-show-less, .older-news[open] .news-show-more { visibility: hidden; }
+.older-news[open] .news-show-less { visibility: visible; }
+.older-news > summary:hover { text-decoration: underline; }
+.older-news > summary:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.older-news::details-content { display: grid; grid-template-rows: 0fr; }
+.older-news[open]::details-content { grid-template-rows: 1fr; }
+.older-news > .news-list { overflow: hidden; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .older-news { --news-duration: 360ms; }
+  .older-news::details-content {
+    transition: grid-template-rows var(--news-duration) ease-in-out, content-visibility var(--news-duration) allow-discrete;
+  }
+  .older-news > summary > span { transition: visibility 0s var(--news-duration); }
+}
 
 .experiences-section { margin-top: 24px; }
 .experience-list { list-style: none; margin: 0; padding: 0; }
@@ -65,7 +81,7 @@ h2 { font-size: 24px; font-weight: 700; line-height: 1.3; margin: 0 0 16px; }
 .experience-role-row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px 20px; margin-top: 6px; }
 .experience-role { font-size: 16px; }
 .experience-dates { color: #555; font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums; }
-.experience-advisor { color: #555; font-size: 14px; margin-top: 4px; }
+.experience-advisor { color: #555; font-size: 14px; font-style: italic; margin-top: 4px; }
 
 .research-section { margin-top: 24px; }
 .publication { padding: 18px 0; }
@@ -76,6 +92,7 @@ h2 { font-size: 24px; font-weight: 700; line-height: 1.3; margin: 0 0 16px; }
 .publication-authors { margin-bottom: 4px; font-size: 15px; line-height: 1.5; }
 .publication-authors strong { font-weight: 700; }
 .publication-venue { margin-bottom: 3px; font-size: 15px; }
+.publication-award { font-style: normal; font-weight: 600; }
 .publication-links { font-size: 14px; }
 .publication-links a { display: inline-block; padding-block: 3px; }
 .site-footer { padding-top: 38px; padding-bottom: 28px; color: #777; font-size: 13px; text-align: right; }
@@ -89,7 +106,7 @@ h2 { font-size: 24px; font-weight: 700; line-height: 1.3; margin: 0 0 16px; }
 }
 @media (max-width: 700px) {
   .profile { display: flex; flex-direction: column-reverse; gap: 24px; padding-top: 28px; }
-  .profile-slideshow { width: 190px; }
+  .profile-photo { width: 190px; }
   .profile h1 { font-size: 30px; }
   .news-section { padding-top: 22px; }
   .news-row { grid-template-columns: 78px minmax(0, 1fr); gap: 10px; margin-bottom: 10px; }
@@ -105,5 +122,4 @@ h2 { font-size: 24px; font-weight: 700; line-height: 1.3; margin: 0 0 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .profile-slide { transition: none; }
 }
