@@ -44,7 +44,7 @@ export default function AboutSection() {
           alt="Gyusam Chang"
           fill
           priority
-          sizes="(max-width: 700px) 190px, 240px"
+          sizes="(max-width: 700px) 160px, 180px"
         />
       </div>
     </section>
